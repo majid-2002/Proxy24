@@ -1516,12 +1516,22 @@ body::before {
   background-attachment: scroll;
 }
 
+@media (max-width: 480px) {
+  .map_section {
+    height: 100vh;
+  }
+}
+
+.map_section {
+  height: 140vh;
+}
+
 .map_wrapper {
   position: relative;
   background-image: url("./public/Globe_Desktop.webp");
   background-repeat: no-repeat;
   background-size: 100% auto;
-  background-position: center -10%;
+  background-position: center -15%;
   background-attachment: scroll;
 }
 
@@ -1538,7 +1548,7 @@ body::before {
   .map_wrapper {
     background-image: url("./public/Globe.webp");
     background-size: 200% auto;
-    background-position: center 80%;
+    background-position: center 50%;
   }
 }
 
@@ -1764,6 +1774,18 @@ ul li {
 .faq_bg_transition.active {
   opacity: 1;
   transform: translateY(0);
+}
+
+footer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 1.92%, #000 40%);
+  background-size: cover;
+  /* Ensures the gradient covers the whole footer */
+  color: white;
+  /* Keeps text color white for readability */
+  position: relative;
+  /* Ensures background gradient stays behind content */
+  z-index: 1;
+  /* Places the background below content */
 }
 
 .footer_scroller ul li {
