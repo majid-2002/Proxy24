@@ -1187,7 +1187,7 @@ body {
 @font-face {
   font-family: 'vtksinsone';
 
-  src: url('fonts/vtks2.ttf') format('truetype');
+  src: url('./fonts/vtks2.ttf') format('truetype');
 }
 
 @font-face {
