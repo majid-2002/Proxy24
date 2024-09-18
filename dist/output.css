@@ -779,6 +779,10 @@ video {
   margin-bottom: 1.5rem;
 }
 
+.mb-8 {
+  margin-bottom: 2rem;
+}
+
 .ml-0 {
   margin-left: 0px;
 }
@@ -1922,6 +1926,11 @@ video {
   padding-bottom: 5rem;
 }
 
+.py-24 {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
 .py-28 {
   padding-top: 7rem;
   padding-bottom: 7rem;
@@ -2616,7 +2625,7 @@ body::before {
 @media (max-width: 480px) {
   .map_wrapper {
     background-image: url("/public/map_mob.svg");
-    background-size: 250% auto;
+    background-size: 200% auto;
     background-position: center 80%;
     /* Adjust vertical positioning for small devices */
   }
@@ -2986,10 +2995,6 @@ ul li {
     margin-bottom: calc(4rem * var(--tw-space-y-reverse));
   }
 
-  .md\:p-6 {
-    padding: 1.5rem;
-  }
-
   .md\:px-12 {
     padding-left: 3rem;
     padding-right: 3rem;
@@ -3005,9 +3010,9 @@ ul li {
     padding-right: 1.25rem;
   }
 
-  .md\:px-7 {
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
+  .md\:px-8 {
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .md\:py-12 {
@@ -3023,6 +3028,11 @@ ul li {
   .md\:py-48 {
     padding-top: 12rem;
     padding-bottom: 12rem;
+  }
+
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
   }
 
   .md\:pb-24 {

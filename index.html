@@ -356,22 +356,23 @@
     </div>
 
     <section
-      class="flex flex-col space-y-20 justify-center h-auto py-20 items-center px-5 sm:px-14 lg:px-64"
+      class="flex flex-col space-y-4 justify-center h-auto py-24 items-center px-5 sm:px-14 lg:px-64"
     >
       <h3
-        class="faq_heading text-3xl md:text-5xl text-white flex flex-col text-center"
+        class="faq_heading text-3xl md:text-5xl text-white flex flex-col text-center mb-8"
       >
         FREQUENTLY
-        <span> ASKED <span class="text-mystic">QUESTIONS</span> </span>
+        <span> ASKED <span class="text-mystic">QUESTIONS</span></span>
       </h3>
+      <!-- item 1 -->
       <div class="flex flex-col space-y-4 w-full items-center">
-        <div class="text-white px-2 md:px-7 w-full sm:w-4/5 faq_content">
+        <div class="text-white px-4 md:px-8 w-full sm:w-4/5 faq_content">
           <button
             onclick="toggleAccordion(1)"
-            class="accordion-btn accordion rounded-xl bg-[rgba(20,20,20,0.8)] p-3 md:p-6 w-full flex justify-between items-center py-7 text-white text-base md:text-xl"
+            class="accordion-btn accordion rounded-xl bg-[rgba(20,20,20,0.8)] py-4 md:py-6 px-6 w-full flex justify-between items-center text-white text-base md:text-xl text-left"
             id="accordion-btn-1"
           >
-            <span>What is Material Tailwind?</span>
+            <span>What is the criteria for joining the event?</span>
             <span
               id="icon-1"
               class="text-white transition-transform duration-300"
@@ -389,21 +390,168 @@
             </span>
           </button>
           <div id="content-1" class="max-h-0 overflow-hidden faq-content">
-            <div class="text-sm text-white faq_qstn_content relative">
+            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
               <div
                 class="faq_bg_transition absolute inset-0 w-full h-full"
               ></div>
-              <div class="relative p-3 md:p-6 pt-0 h-full leading-8">
-                You select the apps you want to block on the Blok app and then
-                tap the physical Blok to activate the restriction of those apps
-                on your phone.
-                <br />
-                If you want to re-enable access to those apps, you'll have to
-                physically go to the where the Blok is and tap it again to
-                unblock.
-                <br />
-                This physical friction is what differentiates Blok from other
-                software app blocking solutions.
+              <div class="relative h-full">
+                You must be a student, and not a working professional.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item 2 -->
+      <div class="flex flex-col space-y-4 w-full items-center">
+        <div class="text-white px-4 md:px-8 w-full sm:w-4/5 faq_content">
+          <button
+            onclick="toggleAccordion(2)"
+            class="accordion-btn accordion rounded-xl bg-[rgba(20,20,20,0.8)] py-4 md:py-6 px-6 w-full flex justify-between items-center text-white text-base md:text-xl text-left"
+            id="accordion-btn-2"
+          >
+            <span> Is it open for all colleges? </span>
+            <span
+              id="icon-2"
+              class="text-white transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                />
+              </svg>
+            </span>
+          </button>
+          <div id="content-2" class="max-h-0 overflow-hidden faq-content">
+            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+              <div
+                class="faq_bg_transition absolute inset-0 w-full h-full"
+              ></div>
+              <div class="relative h-full">
+                Students from colleges across India can participate.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="flex flex-col space-y-4 w-full items-center">
+        <div class="text-white px-4 md:px-8 w-full sm:w-4/5 faq_content">
+          <button
+            onclick="toggleAccordion(3)"
+            class="accordion-btn accordion rounded-xl bg-[rgba(20,20,20,0.8)] py-4 md:py-6 px-6 w-full flex justify-between items-center text-white text-base md:text-xl text-left"
+            id="accordion-btn-3"
+          >
+            <span>
+              Can we register as a team? If so, how many members can a team
+              have?
+            </span>
+            <span
+              id="icon-3"
+              class="text-white transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                />
+              </svg>
+            </span>
+          </button>
+          <div id="content-3" class="max-h-0 overflow-hidden faq-content">
+            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+              <div
+                class="faq_bg_transition absolute inset-0 w-full h-full"
+              ></div>
+              <div class="relative h-full">
+                Yes! This is open to teams consisting of four members
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- item 3 -->
+      <div class="flex flex-col space-y-4 w-full items-center">
+        <div class="text-white px-4 md:px-8 w-full sm:w-4/5 faq_content">
+          <button
+            onclick="toggleAccordion(4)"
+            class="accordion-btn accordion rounded-xl bg-[rgba(20,20,20,0.8)] py-4 md:py-6 px-6 w-full flex justify-between items-center text-white text-base md:text-xl text-left"
+            id="accordion-btn-4"
+          >
+            <span> Do I get certificates and swags for participation? </span>
+            <span
+              id="icon-4"
+              class="text-white transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                />
+              </svg>
+            </span>
+          </button>
+          <div id="content-4" class="max-h-0 overflow-hidden faq-content">
+            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+              <div
+                class="faq_bg_transition absolute inset-0 w-full h-full"
+              ></div>
+              <div class="relative h-full">
+                Exciting goodies and swags are awaiting all shortlisted teams
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex flex-col space-y-4 w-full items-center">
+        <div class="text-white px-4 md:px-8 w-full sm:w-4/5 faq_content">
+          <button
+            onclick="toggleAccordion(5)"
+            class="accordion-btn accordion rounded-xl bg-[rgba(20,20,20,0.8)] py-4 md:py-6 px-6 w-full flex justify-between items-center text-white text-base md:text-xl text-left"
+            id="accordion-btn-5"
+          >
+            <span> Is the event online or offline? </span>
+            <span
+              id="icon-5"
+              class="text-white transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                />
+              </svg>
+            </span>
+          </button>
+          <div id="content-5" class="max-h-0 overflow-hidden faq-content">
+            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+              <div
+                class="faq_bg_transition absolute inset-0 w-full h-full"
+              ></div>
+              <div class="relative h-full">
+                All teams that are shortlisted will be invited to Government
+                Engineering College Thrissur, where you will be competing
+                against other teams for three action-packed days.
               </div>
             </div>
           </div>
@@ -413,7 +561,7 @@
 
     <div class="map_wrapper">
       <section
-        class="h-screen space-y-10 pt-24 pb-96  px-5 sm:px-14 lg:px-64 text-xl legacy_section"
+        class="h-screen space-y-10 pt-24 pb-96 px-5 sm:px-14 lg:px-64 text-xl legacy_section"
       >
         <h3
           class="legacy_heading text-3xl md:text-5xl text-white flex flex-col items-center text-center"

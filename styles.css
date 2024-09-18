@@ -234,7 +234,7 @@ body::before {
 @media (max-width: 480px) {
     .map_wrapper {
         background-image: url("/public/map_mob.svg");
-        background-size: 250% auto;
+        background-size: 200% auto;
         background-position: center 80%;
         /* Adjust vertical positioning for small devices */
     }
