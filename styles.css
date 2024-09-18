@@ -193,7 +193,7 @@ body::before {
     right: 5%;
     bottom: 0;
     z-index: -10;
-    background-image: url('/public/Lines.svg');
+    background-image: url('/public/Lines.png');
     background-position: center;
     background-repeat: repeat;
     width: 90%;
@@ -236,7 +236,6 @@ body::before {
         background-image: url("/public/Globe.png");
         background-size: 200% auto;
         background-position: center 80%;
-        /* Adjust vertical positioning for small devices */
     }
 }
 
