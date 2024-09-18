@@ -155,7 +155,7 @@ body {
 
 .hero_section {
     position: relative;
-    background-image: url('./public/backgroundImage.svg');
+    background-image: url('./public/backgroundImage.png');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -215,7 +215,7 @@ body::before {
 
 .map_wrapper {
     position: relative;
-    background-image: url("/public/map.svg");
+    background-image: url("/public/map.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center -10%;
