@@ -36,19 +36,6 @@ body {
         z-index: 9999;
         /* Makes sure it appears above other elements */
     }
-
-    .cursor-outline {
-        position: fixed;
-        width: 60px;
-        height: 60px;
-        border: 2px solid black;
-        border-radius: 50%;
-        transform: translate(-50%, -50%);
-        pointer-events: none;
-        z-index: 9998;
-        transition: left 0.1s ease, top 0.1s ease;
-        /* Smooth movement */
-    }
 }
 
 .cursor-dot.default {
@@ -98,6 +85,23 @@ body {
     src: url('./fonts/Exo2-Regular.otf') format('opentype');
     font-weight: 400;
     /* Regular */
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url('./fonts/Exo2-SemiBold.otf') format('opentype');
+    font-weight: 500;
+    /* Regular */
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Exo 2';
+    src: url('./fonts/Exo2-Medium.otf') format('opentype');
+    font-weight: 600;
+    /* Medium */
     font-style: normal;
 }
 
@@ -161,7 +165,7 @@ body {
     background-size: cover;
 
     width: 100%;
-    height: 124vh;
+    height: 135vh;
     color: #fff;
     font-family: 'vtksinsone';
     text-align: center;
@@ -195,9 +199,9 @@ body::before {
     z-index: -10;
     background-image: url('./public/Lines.webp');
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     width: 90%;
-    background-size: 60%;
+    background-size: 80% auto;
     background-attachment: fixed;
     /* Adjusts the zoom level */
     opacity: 1;
@@ -206,7 +210,7 @@ body::before {
 
 .background-wrapper {
     position: relative;
-    background-image: url("./public/sloganrl.svg");
+    background-image: url("./public/sloganrl.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -226,13 +230,12 @@ body::before {
 
 .map_wrapper {
     position: relative;
-    background-image: url("./public/Globe_Desktop.webp");
+    background-image: url("./public/Globe_removed_Desktop.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center -15%;
     background-attachment: scroll;
 }
-
 
 /* Adjustments for mobile screens */
 @media (max-width: 768px) {
@@ -271,7 +274,6 @@ body::before {
 }
 
 .slogan_icon {
-    background-image: url('./public/slogan3.svg');
     position: absolute;
     top: 210vh;
     right: 80px;
@@ -279,15 +281,39 @@ body::before {
     z-index: 1;
     width: 14vw;
     height: 15vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    /* Ensure overflow is hidden to prevent background from going outside the container */
+}
+
+.background_wrapper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: url('./public/slogan1.png');
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
+    animation: rotateBackground 10s linear infinite;
+    z-index: -1;
+}
+
+@keyframes rotateBackground {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
 }
 
 .slogan_icon_2 {
-    background-image: url('./public/smiley.svg');
+    background-image: url('./public/smiley.png');
     position: absolute;
-    top: 300vh;
+    top: 320vh;
     left: 80px;
     transform: translateY(50%);
     z-index: -1;
@@ -339,12 +365,23 @@ body::before {
     color: var(--mystic-orchid);
 }
 
+.location_section,
 footer,
 .faq_content,
 .about_us_content,
 .legacy_content,
 .structure_content {
     font-family: 'Exo 2';
+    font-weight: 600;
+}
+
+.location_section {
+    display: none;
+}
+
+/* Show the location_section when the parent container is hovered */
+.hover_container:hover .location_section {
+    display: flex;
 }
 
 .faq_qstn_content {
@@ -356,6 +393,7 @@ footer,
     font-family: 'paladins';
     color: var(--black);
 }
+
 
 ul li {
     line-height: 1;
@@ -374,12 +412,30 @@ ul li {
 }
  */
 
+.circle {
+    animation: moveUpDown 1.4s ease-in-out infinite;
+}
+
+@keyframes moveUpDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-18px);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
+
 
 
 
 .scroller[data-animated="true"] {
     position: absolute;
-    top: 114vh;
+    top: 120vh;
     left: 0;
     overflow: hidden;
     width: 100vw + 12vw;
@@ -408,7 +464,6 @@ ul li {
 
     .scroller[data-animated="true"] .scroller_inner {
         animation: scroll 20s linear infinite;
-        /* Speed up scrolling on smaller screens */
     }
 }
 
@@ -465,7 +520,7 @@ ul li {
     }
 
     100% {
-        transform: translateX(25%);
+        transform: translateX(-25%);
     }
 }
 
@@ -515,4 +570,51 @@ footer {
 
 .footer_scroller[data-animated="true"] .scroller_inner {
     animation: scroll 30s linear infinite;
+}
+
+
+.column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 650px;
+    row-gap: 1rem;
+    /* Fixed height */
+    overflow: hidden;
+}
+
+.animate-img {
+    width: 100%;
+    height: auto;
+    animation: moveImages 10s linear infinite;
+}
+
+.column-1 .animate-img {
+    animation-delay: 0s;
+    /* Adjust the timing if needed */
+}
+
+.column-2 .animate-img {
+    animation: moveImages 10s linear infinite reverse;
+    animation-delay: 2s;
+    /* Adjust the timing if needed */
+}
+
+.column-3 .animate-img {
+    animation-delay: 10s;
+    /* Adjust the timing if needed */
+}
+
+@keyframes moveImages {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
 }

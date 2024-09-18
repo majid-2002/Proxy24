@@ -46,7 +46,6 @@
     </div>
 
     <div class="hidden sm:block cursor-dot default" data-cursor-dot></div>
-    <div class="hidden sm:block cursor-outline" data-cursor-outline></div>
 
     <!-- Hero SEction -->
     <section class="hero_section basic-shape-polygon" id="hero_section">
@@ -68,8 +67,8 @@
             <a href="#contact_us"> Contact Us </a>
           </button>
         </div>
-        <div class="flex items-center justify-center space-y-10 flex-col">
-          <h3 class="text-6xl lg:text-9xl">
+        <div class="flex items-center justify-center space-y-14 flex-col">
+          <h3 class="text-6xl md:pt-20 lg:text-9xl">
             NATIONAL LEVEL
             <br />
             TECHNICAL EVENT
@@ -102,11 +101,27 @@
               <img src="public/Union.svg" alt="arrow" class="ml-2 w-4 mb-1" />
             </a>
           </button>
-          <img src="public/slider.svg" alt="slider" class="w-12 mt-9 mx-auto" />
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="26"
+            height="46"
+            viewBox="0 0 26 46"
+            fill="none"
+          >
+            <rect
+              x="1.5"
+              y="1.5"
+              width="23"
+              height="43"
+              rx="11.5"
+              stroke="#030403"
+              stroke-width="3"
+            />
+            <circle cx="13" cy="33" r="6" fill="#030403" class="circle" />
+          </svg>
         </div>
       </div>
     </section>
-    <!-- Scroller -->
 
     <!-- About Us -->
     <section
@@ -167,7 +182,10 @@
       </p>
     </section>
 
-    <div class="slogan_icon hidden lg:block"></div>
+    <div class="slogan_icon hidden lg:flex justify-center items-center">
+      <div class="background_wrapper"></div>
+      <img src="./public/fan.png" alt="slogan" class="w-24" />
+    </div>
     <section
       class="h-auto space-y-10 pt-24 pb-12 md:pt-48 md:pb-24 px-5 sm:px-14 lg:px-64 text-xl legacy_section"
     >
@@ -273,10 +291,15 @@
     </section>
 
     <div
-      class="bg-mystic flex flex-row space-x-5 register_section justify-center items-center text-center py-8 md:py-12"
+      class="bg-mystic hover:bg-freshlime flex flex-row space-x-5 register_section justify-center items-center text-center py-8 md:py-12"
     >
-      <h3 class="text-3xl md:text-6xl">REGISTER FOR FREE</h3>
-      <img src="public/Union.svg" alt="arrow" class="w-4 md:w-10 mb-1" />
+      <a
+        href="https://bit.ly/proxy24_registration"
+        class="flex flex-row items-center justify-center"
+      >
+        <h3 class="text-3xl md:text-6xl">REGISTER FOR FREE</h3>
+        <img src="public/Union.svg" alt="arrow" class="w-4 md:w-10 mb-1" />
+      </a>
     </div>
 
     <section
@@ -334,34 +357,102 @@
         >
           GLIMPSES OF<span class="text-freshlime ml-4">PROXY</span>
         </h3>
-        <div class="flex flex-wrap justify-center gap-y-5 gap-3">
+        <div class="md:flex hidden gap-3">
+          <div class="column column-1">
+            <img
+              src="public/proxy_images/proxy1.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+            <img
+              src="public/proxy_images/proxy2.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+            <img
+              src="public/proxy_images/proxy3.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+          </div>
+          <div class="column column-2">
+            <img
+              src="public/proxy_images/proxy4.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+            <img
+              src="public/proxy_images/proxy5.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+            <img
+              src="public/proxy_images/proxy6.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+          </div>
+          <div class="column column-3">
+            <img
+              src="public/proxy_images/proxy7.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+            <img
+              src="public/proxy_images/proxy8.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+            <img
+              src="public/proxy_images/proxy9.png"
+              alt="glimpse"
+              class="animate-img"
+            />
+          </div>
+        </div>
+        <div class="md:hidden flex flex-wrap justify-center gap-y-5 gap-3">
           <img
-            src="public/legacy2.png"
+            src="public/proxy_images/proxy1.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
-            src="public/legacy1.png"
+            src="public/proxy_images/proxy2.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
-            src="public/legacy3.png"
+            src="public/proxy_images/proxy3.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
-            src="public/legacy4.png"
+            src="public/proxy_images/proxy4.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
-            src="public/legacy5.png"
+            src="public/proxy_images/proxy5.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
-            src="public/legacy6.png"
+            src="public/proxy_images/proxy6.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/proxy_images/proxy7.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/proxy_images/proxy8.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/proxy_images/proxy9.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
@@ -404,7 +495,7 @@
             </span>
           </button>
           <div id="content-1" class="max-h-0 overflow-hidden faq-content">
-            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+            <div class="text-sm px-6 pb-6 text-white faq_qstn_content relative">
               <div
                 class="faq_bg_transition absolute inset-0 w-full h-full"
               ></div>
@@ -442,7 +533,7 @@
             </span>
           </button>
           <div id="content-2" class="max-h-0 overflow-hidden faq-content">
-            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+            <div class="text-sm px-6 pb-6 text-white faq_qstn_content relative">
               <div
                 class="faq_bg_transition absolute inset-0 w-full h-full"
               ></div>
@@ -483,7 +574,7 @@
             </span>
           </button>
           <div id="content-3" class="max-h-0 overflow-hidden faq-content">
-            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+            <div class="text-sm px-6 pb-6 text-white faq_qstn_content relative">
               <div
                 class="faq_bg_transition absolute inset-0 w-full h-full"
               ></div>
@@ -521,7 +612,7 @@
             </span>
           </button>
           <div id="content-4" class="max-h-0 overflow-hidden faq-content">
-            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+            <div class="text-sm px-6 pb-6 text-white faq_qstn_content relative">
               <div
                 class="faq_bg_transition absolute inset-0 w-full h-full"
               ></div>
@@ -558,7 +649,7 @@
             </span>
           </button>
           <div id="content-5" class="max-h-0 overflow-hidden faq-content">
-            <div class="text-sm px-6 pb-4 text-white faq_qstn_content relative">
+            <div class="text-sm px-6 pb-6 text-white faq_qstn_content relative">
               <div
                 class="faq_bg_transition absolute inset-0 w-full h-full"
               ></div>
@@ -573,9 +664,26 @@
       </div>
     </section>
 
-    <div class="map_wrapper">
+    <div class="map_wrapper relative">
+      <div class="hover_container w-24 bg-red-500">
+        <div
+          class="w-72 absolute flex-col gap-y-2 aspect-auto top-[52%] left-[40%] p-3 bg-[rgba(20,20,20,0.8)] rounded-xl location_section"
+        >
+          <img src="./public/college.png" alt="map" class="w-auto" />
+          <div
+            class="flex flex-row items-center justify-center gap-x-4 text-white"
+          >
+            <p class="text-lg">Government Engineering College, Thrissur</p>
+            <img
+              src="./public/uniongreen.png"
+              alt="union"
+              class="w-14 aspect-square"
+            />
+          </div>
+        </div>
+      </div>
       <section
-        class=" space-y-10 pt-24 pb-96 px-5 sm:px-14 lg:px-64 text-xl map_section"
+        class="space-y-10 pt-24 pb-96 px-5 sm:px-14 lg:px-64 text-xl map_section"
       >
         <h3
           class="legacy_heading text-3xl md:text-5xl text-white flex flex-col items-center text-center"

@@ -40,7 +40,6 @@ function toggleAccordion(index) {
     accordionBtn.style.color = "white";
 
     // Ensure the background transition happens first
-
     setTimeout(() => {
       faqBg.classList.remove("active");
       accordionBtn.classList.remove("accordion-open");
@@ -65,10 +64,10 @@ function toggleAccordion(index) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const cursorDot = document.querySelector("[data-cursor-dot]");
-  const cursorOutline = document.querySelector("[data-cursor-outline]");
+  // const cursorOutline = document.querySelector("[data-cursor-outline]"); // Remove this line
 
-  if (!cursorDot || !cursorOutline) {
-    console.error("Cursor elements not found.");
+  if (!cursorDot) {
+    console.error("Cursor dot element not found.");
     return;
   }
 
@@ -97,7 +96,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     cursorDot.className = `cursor-dot ${inSection}`;
-    cursorOutline.className = `cursor-outline ${inSection}`;
+    // cursorOutline.className = `cursor-outline ${inSection}`; // Remove this line
   }
 
   // Event listener for mouse move
@@ -108,8 +107,9 @@ document.addEventListener("DOMContentLoaded", () => {
     cursorDot.style.left = `${posX}px`;
     cursorDot.style.top = `${posY}px`;
 
-    cursorOutline.style.left = `${posX}px`;
-    cursorOutline.style.top = `${posY}px`;
+    // Remove the outline positioning
+    // cursorOutline.style.left = `${posX}px`;
+    // cursorOutline.style.top = `${posY}px`;
 
     updateCursorColor(posX, posY);
   });
@@ -162,6 +162,3 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(highlightsSection);
 });
-
-
-
