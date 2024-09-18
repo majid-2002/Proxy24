@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.min.css"
+      integrity="sha512-/k/mL9TQSZHAqtVqXJAiy5bt2w1P7gxdra0UlnFjVHF9a/LC2vxt7otx3BMcn79V/DZsPRwdw8tPlwbElMnIAw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+      integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
+    <script src="main.js"></script>
+    <title>Proxy 24</title>
+  </head>
+  <body class="overflow-x-hidden max-[100vw] bg-[#030403]">
+    <div class="overlay h-screen">
+      <h1
+        class="counter text-center pb-5 loader text-5xl sm:text-7xl lg:text-[14rem] whitespace-nowrap"
+      >
+        Loading... 0%
+      </h1>
+    </div>
+
+    <div class="hidden sm:block cursor-dot default" data-cursor-dot></div>
+    <div class="hidden sm:block cursor-outline" data-cursor-outline></div>
+
+    <!-- Hero SEction -->
+    <section class="hero_section basic-shape-polygon" id="hero_section">
+      <div
+        class="flex items-center flex-col space-y-14 sm:space-y-8 hero_content"
+      >
+        <div
+          class="flex flex-row justify-between w-full px-4 md:px-20 pt-4 md:pt-16"
+        >
+          <img
+            src="public/logo.svg"
+            class="w-24 md:w-32"
+            alt="logo"
+            class="logo"
+          />
+          <button
+            class="text-base md:text-xl border-freshlime border-2 p-1 px-4 bg-black/10 text-freshlime"
+          >
+            <a href="#contact_us"> Contact Us </a>
+          </button>
+        </div>
+        <div class="flex items-center justify-center space-y-10 flex-col">
+          <h3 class="text-6xl lg:text-9xl">
+            NATIONAL LEVEL
+            <br />
+            TECHNICAL EVENT
+          </h3>
+          <div class="flex flex-row items-center space-x-2 md:space-x-4">
+            <p class="text-center countdown text-2xl lg:text-4xl">
+              <span class="number" id="days">00</span><br />
+              <span>DAYS</span>
+            </p>
+            <p class="countdown_separator">:</p>
+            <p class="text-center countdown text-2xl lg:text-4xl">
+              <span class="number" id="hours">00</span><br />
+              <span>HOURS</span>
+            </p>
+            <p class="countdown_separator">:</p>
+            <p class="text-center countdown text-2xl lg:text-4xl">
+              <span class="number" id="minutes">00</span><br />
+              <span>MINUTES</span>
+            </p>
+          </div>
+          <button
+            class="bg-freshlime text-black p-2.5 px-8 flex flex-row text-xl md:text-2xl mt-8 items-center hover:scale-110 hover:border-mystic transition-all duration-300 ease-in-out"
+          >
+            <a
+              href="https://bit.ly/proxy24_registration"
+              target="_blank"
+              class="flex flex-row"
+            >
+              Register Now
+              <img src="public/Union.svg" alt="arrow" class="ml-2 w-4 mb-1" />
+            </a>
+          </button>
+          <img src="public/slider.svg" alt="slider" class="w-12 mt-9 mx-auto" />
+        </div>
+      </div>
+    </section>
+    <!-- Scroller -->
+
+    <!-- About Us -->
+    <section
+      class="bg-freshlime h-auto overflow-x-hidden -z-30 text-black text-center px-5 text-xl sm:px-14 lg:px-64 pt-60 md:pt-56 py-28 md:py-48 space-y-10 about_us -mt-36"
+    >
+      <div
+        data-animated="true"
+        class="h-28 md:-rotate-3 w-screen flex items-center justify-center z-10 scroller scroller_section"
+      >
+        <ul
+          class="flex flex-nowrap bg-mystic -rotate-3 py-20 space-x-5 text-xl md:text-4xl justify-center items-center scroller_inner"
+        >
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li>
+            <img src="public/glob.svg" alt="glob" class="min-w-11 mb-1" />
+          </li>
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li><img src="public/sun.svg" alt="sun" class="min-w-11 mb-1" /></li>
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li>
+            <img src="public/glob.svg" alt="glob" class="min-w-11 mb-1" />
+          </li>
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li><img src="public/sun.svg" alt="sun" class="min-w-11 mb-1" /></li>
+
+          <!-- Duplicate Content for Seamless Scroll -->
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li>
+            <img src="public/glob.svg" alt="glob" class="min-w-11 mb-1" />
+          </li>
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li><img src="public/sun.svg" alt="sun" class="min-w-11 mb-1" /></li>
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li>
+            <img src="public/glob.svg" alt="glob" class="min-w-11 mb-1" />
+          </li>
+          <li class="whitespace-nowrap">Proxy 2024</li>
+          <li><img src="public/sun.svg" alt="sun" class="min-w-11 mb-1" /></li>
+        </ul>
+      </div>
+      <h3 class="about_us_heading text-3xl md:text-5xl">
+        What is <span class="text-mystic">Proxy</span
+        ><span class="qstn-mark">?</span>
+      </h3>
+      <p class="about_us_content indent-2 text-sm md:text-lg text-black">
+        Brace yourselves for PROXY'24, an electrifying 36-hour showdown that's
+        way more than just a hackathon! If PROXY 2022 set the bar high, PROXY'24
+        is gearing up to be bigger, bolder, and more thrilling than ever. Expect
+        an explosive mix of innovation, heart-pounding challenges, and non-stop
+        excitement that will push your creativity to the edge.
+      </p>
+      <p class="about_us_content indent-2 text-sm md:text-lg text-black">
+        This isn&apos;t just a competition, it&apos;s a wild ride packed with
+        surprises and opportunities to shine on the biggest stage. The
+        clock&apos;s ticking, and the excitement is off the charts. Are you
+        ready for something epic? Buckle up, PROXY'24 is coming, and it&apos;s
+        going to be legen-wait for it-dary!
+      </p>
+    </section>
+
+    <div class="slogan_icon hidden lg:block"></div>
+    <section
+      class="h-auto space-y-10 pt-24 pb-12 md:pt-48 md:pb-24 px-5 sm:px-14 lg:px-64 text-xl legacy_section"
+    >
+      <h3
+        class="legacy_heading text-3xl md:text-5xl text-white flex flex-col items-center"
+      >
+        PROXY LEGACY
+      </h3>
+      <div class="flex flex-row flex-wrap justify-center gap-3">
+        <img
+          src="public/image1.png"
+          alt="legacy"
+          class="w-[85%] sm:w-[32%] lg:w-[18rem]"
+        />
+        <img
+          src="public/image2.png"
+          alt="legacy"
+          class="w-[85%] sm:w-[30%] lg:w-[18rem]"
+        />
+        <img
+          src="public/image3.png"
+          alt="legacy"
+          class="w-[85%] sm:w-[30%] lg:w-[18rem]"
+        />
+      </div>
+      <p
+        class="indent-2 text-white text-center text-sm md:text-lg legacy_content"
+      >
+        PROXY 2022 was a defining moment for Government Engineering College
+        Thrissur's Computer Science Department, launching us into the national
+        tech spotlight. With
+        <span class="font-medium">500+ registrations</span> from all over India
+        and powered by the incredible support of
+        <span class="font-semibold">Qburst</span> and
+        <span class="font-semibold">KeyValue</span>, this flagship event
+        wasn&apos;t just another tech fest, it was the start of something
+        bigger.
+      </p>
+      <p
+        class="indent-2 text-white text-center text-sm md:text-lg legacy_content"
+      >
+        Spanning 36 hours of non-stop innovation and adventure, PROXY 2022 was
+        more than just a hackathon; it was a Halloween-themed, fun-filled event
+        that fused creativity with real-world problem-solving. Beyond the
+        excitement, it became a career launchpad, with top talent catching the
+        eye of leading companies. And the momentum is only building from here!
+      </p>
+    </section>
+    <div class="slogan_icon_2 hidden lg:block"></div>
+    <section
+      class="flex flex-col w-full space-y-14 justify-center h-auto pt-12 pb-24 md:pt-24 md:pb-48 items-center highlights_section"
+    >
+      <h3
+        class="legacy_heading text-3xl md:text-5xl text-white flex flex-col items-center"
+      >
+        HIGHLIGHTS
+      </h3>
+
+      <!-- First Row -->
+      <div
+        class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 items-center text-center md:text-left"
+      >
+        <div class="flex flex-col items-center">
+          <h6 class="text-7xl lg:text-9xl text-freshlime hours_odometer">0</h6>
+          <span class="text-white text-xl">HOURS</span>
+        </div>
+        <span class="border hidden md:block border-mystic h-24"></span>
+        <div class="flex flex-col items-center">
+          <h6 class="text-7xl lg:text-9xl text-freshlime prize_odometer">0</h6>
+          <span class="text-white text-xl">PRIZE POOL</span>
+        </div>
+        <span class="border hidden md:block border-mystic h-24"></span>
+        <div class="flex flex-col items-center">
+          <h6
+            class="text-7xl lg:text-9xl text-freshlime flex items-center justify-center"
+          >
+            <span class="events_odometer">0</span>
+            <span class="odometer-plus">+</span>
+          </h6>
+          <span class="text-white text-xl">EVENTS</span>
+        </div>
+      </div>
+
+      <!-- Second Row -->
+      <div
+        class="flex flex-col md:flex-row md:space-x-8 space-y-8 md:space-y-0 items-center text-center md:text-left"
+      >
+        <div class="flex flex-col items-center">
+          <h6 class="text-7xl lg:text-9xl text-freshlime first_od">0</h6>
+          <span class="text-white text-xl">FIRST PRIZE</span>
+        </div>
+        <span class="border hidden md:block border-mystic h-24"></span>
+        <div class="flex flex-col items-center">
+          <h6 class="text-7xl lg:text-9xl text-freshlime second_od">0</h6>
+          <span class="text-white text-xl">SECOND PRIZE</span>
+        </div>
+        <span class="border hidden md:block border-mystic h-24"></span>
+        <div class="flex flex-col items-center">
+          <h6 class="text-7xl lg:text-9xl text-freshlime third_od">0</h6>
+          <span class="text-white text-xl">THIRD PRIZE</span>
+        </div>
+      </div>
+    </section>
+
+    <div
+      class="bg-mystic flex flex-row space-x-5 register_section justify-center items-center text-center py-8 md:py-12"
+    >
+      <h3 class="text-3xl md:text-6xl">REGISTER FOR FREE</h3>
+      <img src="public/Union.svg" alt="arrow" class="w-4 md:w-10 mb-1" />
+    </div>
+
+    <section
+      class="flex flex-col space-y-20 justify-center h-auto pt-48 pb-24 items-center px-5 sm:px-14 lg:px-64"
+    >
+      <h3
+        class="structure_heading text-3xl md:text-5xl text-white whitespace-nowrap"
+      >
+        PROXY <span class="text-freshlime ml-2 md:ml-4">STRUCTURE</span>
+      </h3>
+      <p class="structure_content text-white text-sm md:text-lg text-center">
+        What sets PROXY apart is its unpredictability and excitement. Designed
+        to push the limits of tech challenges and teamwork, this three-day event
+        will test your skills, creativity, and collaboration with a series of
+        dynamic, ever-evolving tasks. With brain-teasing competitions and
+        fun-filled challenges, you'll be on your toes to know what&apos;s coming
+        next!
+      </p>
+    </section>
+    <div class="background-wrapper">
+      <section
+        class="flex flex-col space-y-12 md:space-y-16 lg:space-y-20 justify-center h-auto pt-24 md:pt-48 pb-12 md:pb-24 items-center relative sponsor_section"
+      >
+        <h3
+          class="sponsors_heading text-3xl md:text-4xl lg:text-5xl text-white text-center md:text-left flex flex-row items-center"
+        >
+          OUR
+          <span class="text-mystic indent-2 md:indent-4 ml-2 md:ml-0"
+            >SPONSORS</span
+          >
+        </h3>
+
+        <div
+          class="flex flex-wrap justify-center gap-4 w-full px-4 md:px-5 lg:px-24"
+        >
+          <div
+            class="w-[80%] sm:w-[35%] md:w-[30%] lg:w-[20%] aspect-square rounded-xl bg-[rgba(20,20,20,0.8)]"
+          ></div>
+          <div
+            class="w-[80%] sm:w-[35%] md:w-[30%] lg:w-[20%] aspect-square rounded-xl bg-[rgba(20,20,20,0.8)]"
+          ></div>
+          <div
+            class="w-[80%] sm:w-[35%] md:w-[30%] lg:w-[20%] aspect-square rounded-xl bg-[rgba(20,20,20,0.8)]"
+          ></div>
+          <div
+            class="w-[80%] sm:w-[35%] md:w-[30%] lg:w-[20%] aspect-square rounded-xl bg-[rgba(20,20,20,0.8)]"
+          ></div>
+        </div>
+      </section>
+      <section
+        class="flex flex-col glimpse_section space-y-20 justify-center h-auto pt-48 pb-24 items-center px-4 md:px-12 lg:px-24"
+      >
+        <h3
+          class="glimpses_heading text-3xl md:text-4xl lg:text-5xl text-white whitespace-nowrap"
+        >
+          GLIMPSES OF<span class="text-freshlime ml-4">PROXY</span>
+        </h3>
+        <div class="flex flex-wrap justify-center gap-y-5 gap-3">
+          <img
+            src="public/legacy2.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/legacy1.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/legacy3.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/legacy4.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/legacy5.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+          <img
+            src="public/legacy6.png"
+            alt="glimpse"
+            class="w-[85%] sm:w-[30%] lg:w-[21rem]"
+          />
+        </div>
+      </section>
+    </div>
+
+    <section
+      class="flex flex-col space-y-20 justify-center h-auto py-20 items-center px-5 sm:px-14 lg:px-64"
+    >
+      <h3
+        class="faq_heading text-3xl md:text-5xl text-white flex flex-col text-center"
+      >
+        FREQUENTLY
+        <span> ASKED <span class="text-mystic">QUESTIONS</span> </span>
+      </h3>
+      <div class="flex flex-col space-y-4 w-full items-center">
+        <div class="text-white px-2 md:px-7 w-full sm:w-4/5 faq_content">
+          <button
+            onclick="toggleAccordion(1)"
+            class="accordion-btn accordion rounded-xl bg-[rgba(20,20,20,0.8)] p-3 md:p-6 w-full flex justify-between items-center py-7 text-white text-base md:text-xl"
+            id="accordion-btn-1"
+          >
+            <span>What is Material Tailwind?</span>
+            <span
+              id="icon-1"
+              class="text-white transition-transform duration-300"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 16 16"
+                fill="currentColor"
+                class="w-4 h-4"
+              >
+                <path
+                  d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z"
+                />
+              </svg>
+            </span>
+          </button>
+          <div id="content-1" class="max-h-0 overflow-hidden faq-content">
+            <div class="text-sm text-white faq_qstn_content relative">
+              <div
+                class="faq_bg_transition absolute inset-0 w-full h-full"
+              ></div>
+              <div class="relative p-3 md:p-6 pt-0 h-full leading-8">
+                You select the apps you want to block on the Blok app and then
+                tap the physical Blok to activate the restriction of those apps
+                on your phone.
+                <br />
+                If you want to re-enable access to those apps, you'll have to
+                physically go to the where the Blok is and tap it again to
+                unblock.
+                <br />
+                This physical friction is what differentiates Blok from other
+                software app blocking solutions.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="map_wrapper">
+      <section
+        class="h-screen space-y-10 pt-24 pb-96  px-5 sm:px-14 lg:px-64 text-xl legacy_section"
+      >
+        <h3
+          class="legacy_heading text-3xl md:text-5xl text-white flex flex-col items-center text-center"
+        >
+          <div>JOIN US AT <span class="text-freshlime">GEC THRISSUR</span></div>
+          <div>AND CLAIM YOUR VICTORY!</div>
+        </h3>
+      </section>
+      <footer class="" id="contact_us">
+        <div
+          class="flex flex-col items-center md:flex-row justify-between py-10 md:py-20 px-4 lg:px-32 w-full"
+        >
+          <!-- Logo for Small Screens -->
+          <!-- <div class="md:hidden mb-6">
+            <img src="public/logo2.svg" alt="logo" class="w-24" />
+          </div> -->
+
+          <!-- Socials and Contacts -->
+          <div class="flex w-full justify-between flex-row gap-y-6 md:gap-x-16">
+            <!-- Logo for Large Screens -->
+            <div class="block mb-6">
+              <img src="public/logo2.svg" alt="logo" class="w-14 md:w-20" />
+            </div>
+
+            <!-- Socials -->
+            <div class="flex md:flex-row gap-y-6 gap-x-4 md:gap-x-16">
+              <div class="flex flex-col items-start space-y-1 text-white">
+                <h4 class="text-sm md:text-2xl font-semibold">Socials</h4>
+                <a href="#" class="text-xs md:text-sm">Instagram</a>
+                <a href="#" class="text-xs md:text-sm">Email</a>
+              </div>
+
+              <!-- Contacts -->
+              <div class="flex flex-col items-start space-y-1 text-white">
+                <h4 class="text-sm md:text-2xl font-semibold">Contacts</h4>
+                <p class="text-xs md:text-sm">Aadesh: 90723 07478</p>
+                <p class="text-xs md:text-sm">Gayathri: 81389 10367</p>
+                <p class="text-xs md:text-sm">Adhil: 98951 83690</p>
+                <p class="text-xs md:text-sm">Mimitha: 96451 76229</p>
+              </div>
+
+              <!-- Scroll Up Button -->
+              <div
+                class="hidden items-center md:flex justify-center md:justify-end cursor-pointer"
+              >
+                <a href="#hero_section">
+                  <img
+                    src="public/ArrowUp.svg"
+                    alt="arrow"
+                    class="w-8 md:w-10 mb-1"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="cursor-pointer hidden md:hidden flex-col items-center justify-center z-20 w-full h-full"
+        >
+          <a href="#hero_section" class="cursor-pointer">
+            <img src="public/ArrowUp.svg" alt="arrow" class="w-4 mb-1" />
+          </a>
+        </div>
+        <div
+          data-animated="true"
+          class="h-auto overflow-clip bg-transparent flex items-center justify-center z-20 relative bottom-0 text-white footer_scroller"
+        >
+          <ul
+            class="flex flex-row h-48 space-x-10 justify-center items-center text-9xl md:text-[18rem] text-white scroller_inner p-0"
+          >
+            <li class="flex mt-10">
+              <span>CREATE</span>
+            </li>
+            <li class="flex items-end">
+              <img
+                src="public/sunwhite.png"
+                alt="glob"
+                class="w-10 md:min-w-20 h-auto"
+              />
+            </li>
+            <li class="flex mt-10">
+              <span>COMPETE</span>
+            </li>
+            <li class="flex items-end">
+              <img
+                src="public/sunwhite.png"
+                alt="glob"
+                class="w-10 md:min-w-20 h-auto"
+              />
+            </li>
+            <li class="flex mt-10">
+              <span>CREATE</span>
+            </li>
+            <li class="flex mt-10">
+              <img
+                src="public/sunwhite.png"
+                alt="glob"
+                class="w-10 md:min-w-20 h-auto"
+              />
+            </li>
+            <li class="flex mt-10">
+              <span>COMPETE</span>
+            </li>
+            <li class="flex items-end">
+              <img
+                src="public/sunwhite.png"
+                alt="glob"
+                class="w-10 md:min-w-20 h-auto"
+              />
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        startLoader();
+      });
+
+      function startLoader() {
+        let counterEl = document.querySelector(".counter");
+        let overlay = document.querySelector(".overlay"); // Fix: Add overlay reference
+        let currentValue = 0;
+
+        function UpdateCounter() {
+          if (currentValue === 100) {
+            gsap.to(".overlay", 0.5, {
+              top: "-100%",
+              opacity: 0, // Smooth fade out
+              ease: "power2.inOut",
+              onComplete: () => {
+                overlay.classList.add("hidden"); // Add hidden class when animation is done
+              },
+            });
+
+            gsap.to(".hero_section", 0.5, {
+              opacity: 1,
+              y: 0,
+              ease: "power2.inOut",
+            });
+
+            gsap.to(".hero_content", 0.8, {
+              y: 0,
+              opacity: 1,
+              ease: "power2.inOut",
+              delay: 0.5,
+            });
+
+            return;
+          }
+
+          currentValue += Math.floor(Math.random() * 10) + 1;
+
+          if (currentValue > 100) {
+            currentValue = 100;
+          }
+
+          counterEl.textContent = `Loading... ${currentValue}%`;
+
+          let delay = Math.floor(Math.random() * 100) + 10;
+
+          setTimeout(UpdateCounter, delay);
+        }
+
+        UpdateCounter();
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        // Set the target date to October 8, 2024, at 12 PM
+        const targetDate = new Date("2024-10-08T12:00:00");
+
+        function updateCountdown() {
+          const now = new Date();
+          const timeLeft = targetDate - now;
+
+          if (timeLeft <= 0) {
+            // If time has expired, display "00" for each unit
+            document.getElementById("days").textContent = "00";
+            document.getElementById("hours").textContent = "00";
+            document.getElementById("minutes").textContent = "00";
+            return; // Stop further updates
+          }
+
+          // Calculate days, hours, minutes, and seconds left
+          const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+          const hours = Math.floor(
+            (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+          );
+          const minutes = Math.floor(
+            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
+          );
+
+          // Update the HTML elements with the remaining time
+          document.getElementById("days").textContent = String(days).padStart(
+            2,
+            "0"
+          );
+          document.getElementById("hours").textContent = String(hours).padStart(
+            2,
+            "0"
+          );
+          document.getElementById("minutes").textContent = String(
+            minutes
+          ).padStart(2, "0");
+        }
+
+        setInterval(updateCountdown, 1000);
+      });
+    </script>
+  </body>
+</html>
