@@ -77,17 +77,17 @@ body {
 
 @font-face {
     font-family: 'vtksinsone';
-    src: url('fonts/vtks2.ttf') format('truetype');
+    src: url('./fonts/vtks2.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'anuschka';
-    src: url('fonts/anuschka_regular.ttf') format('truetype');
+    src: url('./fonts/anuschka_regular.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'Exo 2';
-    src: url('fonts/Exo2-Light.otf') format('opentype');
+    src: url('./fonts/Exo2-Light.otf') format('opentype');
     font-weight: 300;
     /* Light */
     font-style: normal;
@@ -95,7 +95,7 @@ body {
 
 @font-face {
     font-family: 'Exo 2';
-    src: url('fonts/Exo2-Regular.otf') format('opentype');
+    src: url('./fonts/Exo2-Regular.otf') format('opentype');
     font-weight: 400;
     /* Regular */
     font-style: normal;
@@ -103,7 +103,7 @@ body {
 
 @font-face {
     font-family: 'Exo 2';
-    src: url('fonts/Exo2-Bold.otf') format('opentype');
+    src: url('./fonts/Exo2-Bold.otf') format('opentype');
     font-weight: 700;
     /* Bold */
     font-style: normal;
@@ -111,7 +111,7 @@ body {
 
 @font-face {
     font-family: 'Exo 2';
-    src: url('fonts/Exo2-ExtraBold.otf') format('opentype');
+    src: url('./fonts/Exo2-ExtraBold.otf') format('opentype');
     font-weight: 800;
     /* Extra Bold */
     font-style: normal;
