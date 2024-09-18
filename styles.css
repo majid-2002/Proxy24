@@ -193,7 +193,7 @@ body::before {
     right: 5%;
     bottom: 0;
     z-index: -10;
-    background-image: url('/public/Lines.png');
+    background-image: url('./public/Lines.png');
     background-position: center;
     background-repeat: repeat;
     width: 90%;
@@ -206,7 +206,7 @@ body::before {
 
 .background-wrapper {
     position: relative;
-    background-image: url("/public/sloganrl.svg");
+    background-image: url("./public/sloganrl.svg");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center center;
@@ -215,7 +215,7 @@ body::before {
 
 .map_wrapper {
     position: relative;
-    background-image: url("/public/Globe_Desktop.png");
+    background-image: url("./public/Globe_Desktop.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center -10%;
@@ -233,7 +233,7 @@ body::before {
 
 @media (max-width: 480px) {
     .map_wrapper {
-        background-image: url("/public/Globe.png");
+        background-image: url("./public/Globe.png");
         background-size: 200% auto;
         background-position: center 80%;
     }
