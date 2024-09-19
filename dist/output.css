@@ -1468,16 +1468,16 @@ video {
   line-height: 1rem;
 }
 
+.font-bold {
+  font-weight: 700;
+}
+
 .font-medium {
   font-weight: 500;
 }
 
 .font-semibold {
   font-weight: 600;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .leading-3 {
@@ -1733,25 +1733,25 @@ body {
   height: 100vh;
   width: 100%;
   z-index: 300;
-  background-color: var(--freshlime);
+  background-color: var(--black);
+  /* Start with black background */
   transition: top 0.5s ease-in-out, opacity 0.5s ease-in-out;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
-  /* Ensure it's fully hidden by default */
   opacity: 1;
 }
 
 .overlay.hidden {
   top: -100%;
   opacity: 0;
-  /* Smooth transition in case top doesn't work well on mobile */
 }
 
 .counter {
   font-family: 'anuschka';
-  color: var(--black);
+  color: var(--freshlime);
+  /* Set default lime color */
   z-index: 3;
   text-align: center;
 }
