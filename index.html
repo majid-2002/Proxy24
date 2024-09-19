@@ -67,7 +67,7 @@
             <a href="#contact_us"> Contact Us </a>
           </button>
         </div>
-        <div class="flex items-center justify-center space-y-14 flex-col">
+        <div class="flex items-center justify-center space-y-16 flex-col">
           <h3 class="text-6xl md:pt-20 lg:text-9xl">
             NATIONAL LEVEL
             <br />
@@ -182,12 +182,13 @@
       </p>
     </section>
 
-    <div class="slogan_icon hidden lg:flex justify-center items-center">
-      <div class="background_wrapper"></div>
-      <img src="./public/fan.png" alt="slogan" class="w-24" />
+    <div class="lg:flex hidden justify-center items-center slogan_icon">
+      <div class="background_wrapper hidden lg:block"></div>
+      <img src="./public/fan.png" alt="slogan" class="w-24 hidden lg:block" />
     </div>
+
     <section
-      class="h-auto space-y-10 pt-24 pb-12 md:pt-48 md:pb-24 px-5 sm:px-14 lg:px-64 text-xl legacy_section"
+      class="h-auto space-y-10 pt-24 pb-12 md:pt-48 md:pb-24 px-5 sm:px-14 lg:px-48 text-xl legacy_section"
     >
       <h3
         class="legacy_heading text-3xl md:text-5xl text-white flex flex-col items-center"
@@ -198,17 +199,17 @@
         <img
           src="public/image1.png"
           alt="legacy"
-          class="w-[85%] sm:w-[32%] lg:w-[18rem]"
+          class="w-[85%] sm:w-[32%] lg:w-[30%]"
         />
         <img
           src="public/image2.png"
           alt="legacy"
-          class="w-[85%] sm:w-[30%] lg:w-[18rem]"
+          class="w-[85%] sm:w-[30%] lg:w-[30%]"
         />
         <img
           src="public/image3.png"
           alt="legacy"
-          class="w-[85%] sm:w-[30%] lg:w-[18rem]"
+          class="w-[85%] sm:w-[30%] lg:w-[30%]"
         />
       </div>
       <p
@@ -217,10 +218,10 @@
         PROXY 2022 was a defining moment for Government Engineering College
         Thrissur's Computer Science Department, launching us into the national
         tech spotlight. With
-        <span class="font-medium">500+ registrations</span> from all over India
+        <span class="font-bold">500+ registrations</span> from all over India
         and powered by the incredible support of
-        <span class="font-semibold">Qburst</span> and
-        <span class="font-semibold">KeyValue</span>, this flagship event
+        <span class="font-bold">Qburst</span> and
+        <span class="font-bold">KeyValue</span>, this flagship event
         wasn&apos;t just another tech fest, it was the start of something
         bigger.
       </p>
@@ -297,8 +298,8 @@
         href="https://bit.ly/proxy24_registration"
         class="flex flex-row items-center justify-center gap-x-6"
       >
-        <h3 class="text-3xl md:text-7xl">REGISTER FOR FREE</h3>
-        <img src="public/Union.svg" alt="arrow" class="w-6 md:w-10 mb-1" />
+        <h3 class="text-3xl md:text-8xl">REGISTER FOR FREE</h3>
+        <img src="public/Union.svg" alt="arrow" class="w-6 md:w-16 mb-1" />
       </a>
     </div>
 
@@ -666,19 +667,22 @@
 
     <div class="map_wrapper relative">
       <div
-        class="w-14 h-14 bg-transparent aspect-square rounded-full top-[48%] left-28 md:top-[56%] md:left-[40%] absolute hover-trigger cursor-pointer"
+        class="w-14 h-14 bg-transparent aspect-square rounded-full top-[48%] left-28 md:top-[55%] md:left-[40%] absolute hover-trigger cursor-pointer"
         onclick="toggleLocation()"
       ></div>
 
       <div
-        class="w-52 md:w-72 absolute flex flex-col gap-y-2 aspect-auto top-[50%] left-[20%] md:left-[38%] p-3 bg-[rgba(20,20,20,0.8)] rounded-xl location_section opacity-0 transition-opacity duration-300 ease-in-out"
+        class="w-52 md:w-72 cursor-pointer absolute flex flex-col gap-y-2 aspect-auto top-[50%] left-[20%] md:left-[38%] p-3 bg-[rgba(20,20,20,0.8)] rounded-xl location_section opacity-0 transition-opacity duration-300 ease-in-out"
         id="location_section"
+        onclick="window.open('https://maps.app.goo.gl/ydzzcDuZNgdjw1yH7', '_blank')"
       >
         <img src="./public/college.png" alt="map" class="w-full" />
         <div
           class="flex flex-row items-center justify-center gap-x-4 text-white"
         >
-          <p class="text-sm md:text-lg">Government Engineering College, Thrissur</p>
+          <p class="text-sm md:text-lg">
+            Government Engineering College, Thrissur
+          </p>
           <img
             src="./public/uniongreen.png"
             alt="union"
@@ -772,7 +776,7 @@
               <img
                 src="public/sunwhite.png"
                 alt="glob"
-                class="w-10 md:min-w-20 h-auto"
+                class="w-10 md:min-w-24 h-auto"
               />
             </li>
             <li class="flex mt-10">
@@ -782,7 +786,7 @@
               <img
                 src="public/sunwhite.png"
                 alt="glob"
-                class="w-10 md:min-w-20 h-auto"
+                class="w-10 md:min-w-24 h-auto"
               />
             </li>
             <li class="flex mt-10">
@@ -792,7 +796,7 @@
               <img
                 src="public/sunwhite.png"
                 alt="glob"
-                class="w-10 md:min-w-20 h-auto"
+                class="w-10 md:min-w-24 h-auto"
               />
             </li>
             <li class="flex mt-10">
@@ -802,7 +806,7 @@
               <img
                 src="public/sunwhite.png"
                 alt="glob"
-                class="w-10 md:min-w-20 h-auto"
+                class="w-10 md:min-w-24 h-auto"
               />
             </li>
           </ul>

@@ -201,7 +201,7 @@ body::before {
     background-position: center;
     background-repeat: no-repeat;
     width: 90%;
-    background-size: 80% auto;
+    background-size: 90% auto;
     background-attachment: fixed;
     /* Adjusts the zoom level */
     opacity: 1;
@@ -230,7 +230,7 @@ body::before {
 
 .map_wrapper {
     position: relative;
-    background-image: url("./public/Globe_Desktop.png");
+    background-image: url("./public/Globe_removed_Desktop.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center -15%;
@@ -580,7 +580,6 @@ footer {
     animation: scroll 30s linear infinite;
 }
 
-
 .column {
     display: flex;
     flex-direction: column;
@@ -599,18 +598,22 @@ footer {
 
 .column-1 .animate-img {
     animation-delay: 0s;
-    /* Adjust the timing if needed */
 }
 
 .column-2 .animate-img {
     animation: moveImages 10s linear infinite reverse;
     animation-delay: 2s;
-    /* Adjust the timing if needed */
 }
 
 .column-3 .animate-img {
     animation-delay: 10s;
-    /* Adjust the timing if needed */
+}
+
+@media (max-width: 767px) {
+
+    .column {
+        display: none;
+    }
 }
 
 @keyframes moveImages {
