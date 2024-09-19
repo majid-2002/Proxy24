@@ -889,6 +889,10 @@ video {
   width: 100vw;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .min-w-11 {
   min-width: 2.75rem;
 }
@@ -1004,6 +1008,14 @@ video {
 
 .gap-y-6 {
   row-gap: 1.5rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
+}
+
+.gap-y-12 {
+  row-gap: 3rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -2312,6 +2324,18 @@ footer {
 
   .md\:w-\[30\%\] {
     width: 30%;
+  }
+
+  .md\:w-24 {
+    width: 6rem;
+  }
+
+  .md\:w-28 {
+    width: 7rem;
+  }
+
+  .md\:w-2 {
+    width: 0.5rem;
   }
 
   .md\:min-w-24 {
