@@ -162,3 +162,40 @@ document.addEventListener("DOMContentLoaded", () => {
 
   observer.observe(highlightsSection);
 });
+
+let fadeTimeout; // Variable to store the timeout
+
+function toggleLocation() {
+  const location = document.getElementById("location_section");
+
+  if (location.classList.contains("opacity-0")) {
+    // Show the location section with fade-in
+    location.classList.remove("opacity-0");
+    location.classList.add("opacity-100");
+    location.style.visibility = "visible";
+
+    // Clear any existing timeout
+    clearTimeout(fadeTimeout);
+
+    // Set timeout to fade out after 5 seconds
+    fadeTimeout = setTimeout(() => {
+      location.classList.add("opacity-0");
+      location.classList.remove("opacity-100");
+
+      // Wait for the opacity transition to finish before hiding completely
+      setTimeout(() => {
+        location.style.visibility = "hidden";
+      }, 500); // Match the duration of the CSS transition
+    }, 5000); // 5000 milliseconds = 5 seconds
+  } else {
+    // Hide immediately if already visible
+    clearTimeout(fadeTimeout); // Clear the timeout to avoid multiple triggers
+    location.classList.add("opacity-0");
+    location.classList.remove("opacity-100");
+
+    // Wait for the fade-out effect to complete before setting visibility to hidden
+    setTimeout(() => {
+      location.style.visibility = "hidden";
+    }, 500); // Match the duration of the CSS transition
+  }
+}

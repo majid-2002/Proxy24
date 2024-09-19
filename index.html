@@ -665,23 +665,28 @@
     </section>
 
     <div class="map_wrapper relative">
-      <div class="hover_container w-24 bg-red-500">
+      <div
+        class="w-14 h-14 bg-transparent aspect-square rounded-full top-[48%] left-28 md:top-[56%] md:left-[40%] absolute hover-trigger cursor-pointer"
+        onclick="toggleLocation()"
+      ></div>
+
+      <div
+        class="w-52 md:w-72 absolute flex flex-col gap-y-2 aspect-auto top-[50%] left-[20%] md:left-[38%] p-3 bg-[rgba(20,20,20,0.8)] rounded-xl location_section opacity-0 transition-opacity duration-300 ease-in-out"
+        id="location_section"
+      >
+        <img src="./public/college.png" alt="map" class="w-full" />
         <div
-          class="w-72 absolute flex-col gap-y-2 aspect-auto top-[52%] left-[40%] p-3 bg-[rgba(20,20,20,0.8)] rounded-xl location_section"
+          class="flex flex-row items-center justify-center gap-x-4 text-white"
         >
-          <img src="./public/college.png" alt="map" class="w-auto" />
-          <div
-            class="flex flex-row items-center justify-center gap-x-4 text-white"
-          >
-            <p class="text-lg">Government Engineering College, Thrissur</p>
-            <img
-              src="./public/uniongreen.png"
-              alt="union"
-              class="w-14 aspect-square"
-            />
-          </div>
+          <p class="text-sm md:text-lg">Government Engineering College, Thrissur</p>
+          <img
+            src="./public/uniongreen.png"
+            alt="union"
+            class="w-8 md:w-14 aspect-square"
+          />
         </div>
       </div>
+
       <section
         class="space-y-10 pt-24 pb-96 px-5 sm:px-14 lg:px-64 text-xl map_section"
       >

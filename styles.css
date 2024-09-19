@@ -230,7 +230,7 @@ body::before {
 
 .map_wrapper {
     position: relative;
-    background-image: url("./public/Globe_removed_Desktop.png");
+    background-image: url("./public/Globe_Desktop.png");
     background-repeat: no-repeat;
     background-size: 100% auto;
     background-position: center -15%;
@@ -247,7 +247,7 @@ body::before {
 
 @media (max-width: 480px) {
     .map_wrapper {
-        background-image: url("./public/Globe.webp");
+        background-image: url("./public/Globe_removed_Desktop.png");
         background-size: 200% auto;
         background-position: center 50%;
     }
@@ -375,14 +375,6 @@ footer,
     font-weight: 600;
 }
 
-.location_section {
-    display: none;
-}
-
-/* Show the location_section when the parent container is hovered */
-.hover_container:hover .location_section {
-    display: flex;
-}
 
 .faq_qstn_content {
     font-family: 'Exo 2';
@@ -411,6 +403,22 @@ ul li {
     transform-origin: center center;
 }
  */
+
+.location_section {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.opacity-100 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.opacity-0 {
+    opacity: 0;
+    visibility: hidden;
+}
 
 .circle {
     animation: moveUpDown 1.4s ease-in-out infinite;
