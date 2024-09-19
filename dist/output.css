@@ -817,6 +817,10 @@ video {
   width: 6rem;
 }
 
+.w-28 {
+  width: 7rem;
+}
+
 .w-32 {
   width: 8rem;
 }
@@ -887,10 +891,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-28 {
-  width: 7rem;
 }
 
 .min-w-11 {
@@ -998,8 +998,20 @@ video {
        column-gap: 1.5rem;
 }
 
+.gap-y-12 {
+  row-gap: 3rem;
+}
+
 .gap-y-2 {
   row-gap: 0.5rem;
+}
+
+.gap-y-20 {
+  row-gap: 5rem;
+}
+
+.gap-y-4 {
+  row-gap: 1rem;
 }
 
 .gap-y-5 {
@@ -1008,18 +1020,6 @@ video {
 
 .gap-y-6 {
   row-gap: 1.5rem;
-}
-
-.gap-y-4 {
-  row-gap: 1rem;
-}
-
-.gap-y-12 {
-  row-gap: 3rem;
-}
-
-.gap-y-20 {
-  row-gap: 5rem;
 }
 
 .space-x-10 > :not([hidden]) ~ :not([hidden]) {
@@ -1857,7 +1857,7 @@ body::before {
 
 @media (max-width: 480px) {
   .map_wrapper {
-    background-image: url("./public/Globe_removed_Desktop.png");
+    background-image: url("./public/Globe_mob.png");
     background-size: 200% auto;
     background-position: center 50%;
   }
@@ -2262,11 +2262,6 @@ footer {
     padding-left: 3.5rem;
     padding-right: 3.5rem;
   }
-
-  .sm\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
 }
 
 @media (min-width: 768px) {
@@ -2328,18 +2323,6 @@ footer {
 
   .md\:w-\[30\%\] {
     width: 30%;
-  }
-
-  .md\:w-24 {
-    width: 6rem;
-  }
-
-  .md\:w-28 {
-    width: 7rem;
-  }
-
-  .md\:w-2 {
-    width: 0.5rem;
   }
 
   .md\:min-w-24 {

@@ -247,7 +247,7 @@ body::before {
 
 @media (max-width: 480px) {
     .map_wrapper {
-        background-image: url("./public/Globe_removed_Desktop.png");
+        background-image: url("./public/Globe_mob.png");
         background-size: 200% auto;
         background-position: center 50%;
     }
