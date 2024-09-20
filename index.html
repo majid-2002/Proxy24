@@ -17,7 +17,18 @@
     />
     <link rel="apple-touch-icon" href="./public/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./manifest.json" />
-    <link href="./dist/output.css" rel="stylesheet" />
+    <link
+      href="./dist/output.css"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="styles.css"
+      media="print"
+      onload="this.media='all'"
+    />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.min.css"
@@ -25,15 +36,18 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
       integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
+      defer
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"></script>
-    <script src="main.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/gsap.min.js"
+      defer
+    ></script>
+    <script src="main.js" defer></script>
     <title>Proxy</title>
   </head>
   <body class="overflow-x-hidden max-[100vw] bg-[#030403]">
@@ -203,16 +217,19 @@
       </h3>
       <div class="flex flex-row flex-wrap justify-center gap-3">
         <img
+          loading="lazy"
           src="public/image1.png"
           alt="legacy"
           class="w-[85%] sm:w-[32%] lg:w-[30%]"
         />
         <img
+          loading="lazy"
           src="public/image2.png"
           alt="legacy"
           class="w-[85%] sm:w-[30%] lg:w-[30%]"
         />
         <img
+          loading="lazy"
           src="public/image3.png"
           alt="legacy"
           class="w-[85%] sm:w-[30%] lg:w-[30%]"
@@ -366,16 +383,19 @@
         <div class="md:flex hidden gap-3">
           <div class="column column-1">
             <img
+              loading="lazy"
               src="public/proxy_images/proxy1.png"
               alt="glimpse"
               class="animate-img"
             />
             <img
+              loading="lazy"
               src="public/proxy_images/proxy2.png"
               alt="glimpse"
               class="animate-img"
             />
             <img
+              loading="lazy"
               src="public/proxy_images/proxy3.png"
               alt="glimpse"
               class="animate-img"
@@ -383,16 +403,19 @@
           </div>
           <div class="column column-2">
             <img
+              loading="lazy"
               src="public/proxy_images/proxy4.png"
               alt="glimpse"
               class="animate-img"
             />
             <img
+              loading="lazy"
               src="public/proxy_images/proxy5.png"
               alt="glimpse"
               class="animate-img"
             />
             <img
+              loading="lazy"
               src="public/proxy_images/proxy6.png"
               alt="glimpse"
               class="animate-img"
@@ -400,16 +423,19 @@
           </div>
           <div class="column column-3">
             <img
+              loading="lazy"
               src="public/proxy_images/proxy7.png"
               alt="glimpse"
               class="animate-img"
             />
             <img
+              loading="lazy"
               src="public/proxy_images/proxy8.png"
               alt="glimpse"
               class="animate-img"
             />
             <img
+              loading="lazy"
               src="public/proxy_images/proxy9.png"
               alt="glimpse"
               class="animate-img"
@@ -418,46 +444,55 @@
         </div>
         <div class="md:hidden flex flex-wrap justify-center gap-y-5 gap-3">
           <img
+            loading="lazy"
             src="public/proxy_images/proxy1.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy2.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy3.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy4.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy5.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy6.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy7.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy8.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
           />
           <img
+            loading="lazy"
             src="public/proxy_images/proxy9.png"
             alt="glimpse"
             class="w-[85%] sm:w-[30%] lg:w-[21rem]"
@@ -777,7 +812,7 @@
           class="h-auto overflow-clip bg-transparent flex items-center justify-center z-20 relative bottom-0 text-white footer_scroller"
         >
           <ul
-            class=" flex flex-row h-48 space-x-10 justify-center items-center text-9xl md:text-[18rem] text-white scroller_inner p-0"
+            class="flex flex-row h-48 space-x-10 justify-center items-center text-9xl md:text-[18rem] text-white scroller_inner p-0"
           >
             <li class="flex mt-10 tracking-wide">
               <span>CREATE</span>
