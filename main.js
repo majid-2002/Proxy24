@@ -121,6 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {
       const odometer = new Odometer({
         el,
         value: 0,
+        duration: 500,
       });
       odometer.update(value);
     }
