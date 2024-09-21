@@ -893,6 +893,10 @@ video {
   width: 100vw;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .min-w-11 {
   min-width: 2.75rem;
 }
@@ -2348,6 +2352,10 @@ footer {
 
   .md\:w-12 {
     width: 3rem;
+  }
+
+  .md\:w-1 {
+    width: 0.25rem;
   }
 
   .md\:min-w-24 {
