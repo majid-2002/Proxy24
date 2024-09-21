@@ -2346,6 +2346,10 @@ footer {
     width: 30%;
   }
 
+  .md\:w-12 {
+    width: 3rem;
+  }
+
   .md\:min-w-24 {
     min-width: 6rem;
   }
