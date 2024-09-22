@@ -146,8 +146,8 @@ body {
 .overlay.hidden {
     top: -100%;
     opacity: 0;
+    z-index: -1;
 }
-
 .counter {
     font-family: 'anuschka';
     color: var(--freshlime);

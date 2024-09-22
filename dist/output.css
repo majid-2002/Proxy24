@@ -664,6 +664,10 @@ video {
   z-index: 20;
 }
 
+.z-50 {
+  z-index: 50;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -789,6 +793,10 @@ video {
   max-height: 0px;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -891,10 +899,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1 {
-  width: 0.25rem;
 }
 
 .min-w-11 {
@@ -1787,6 +1791,7 @@ body {
 .overlay.hidden {
   top: -100%;
   opacity: 0;
+  z-index: -1;
 }
 
 .counter {
@@ -2326,12 +2331,12 @@ footer {
     width: 2.5rem;
   }
 
-  .md\:w-14 {
-    width: 3.5rem;
+  .md\:w-12 {
+    width: 3rem;
   }
 
-  .md\:w-16 {
-    width: 4rem;
+  .md\:w-14 {
+    width: 3.5rem;
   }
 
   .md\:w-20 {
@@ -2348,14 +2353,6 @@ footer {
 
   .md\:w-\[30\%\] {
     width: 30%;
-  }
-
-  .md\:w-12 {
-    width: 3rem;
-  }
-
-  .md\:w-1 {
-    width: 0.25rem;
   }
 
   .md\:min-w-24 {
@@ -2495,8 +2492,8 @@ footer {
     line-height: 1;
   }
 
-  .md\:text-8xl {
-    font-size: 6rem;
+  .md\:text-7xl {
+    font-size: 4.5rem;
     line-height: 1;
   }
 
@@ -2517,11 +2514,6 @@ footer {
   .md\:text-xl {
     font-size: 1.25rem;
     line-height: 1.75rem;
-  }
-
-  .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
   }
 }
 
