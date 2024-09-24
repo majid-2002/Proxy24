@@ -2102,6 +2102,7 @@ ul li {
 @media (max-width: 480px) {
   .scroller[data-animated="true"] {
     top: 100vh;
+    left: 0;
   }
 }
 
