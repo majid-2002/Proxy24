@@ -445,7 +445,7 @@ ul li {
 .scroller[data-animated="true"] {
     position: absolute;
     top: 120vh;
-    left: 0;
+    left: -10px;
     overflow: hidden;
     width: 100vw + 12vw;
     height: 6rem;
