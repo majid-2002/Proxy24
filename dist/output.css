@@ -1840,7 +1840,7 @@ body {
 
 @media (max-width: 480px) {
   .hero_section {
-    height: 100vh;
+    height: 110vh;
   }
 }
 
@@ -2092,7 +2092,7 @@ ul li {
 .scroller[data-animated="true"] {
   position: absolute;
   top: 120vh;
-  left: -10px;
+  left: -4px;
   overflow: hidden;
   width: 100vw + 12vw;
   height: 6rem;
@@ -2101,7 +2101,7 @@ ul li {
 
 @media (max-width: 480px) {
   .scroller[data-animated="true"] {
-    top: 100vh;
+    top: 110vh;
     left: 0;
   }
 }
