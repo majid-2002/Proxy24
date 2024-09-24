@@ -917,10 +917,10 @@
 
           // Set text color based on gradient position
           if (gradientPosition < 50) {
-            counterEl.style.color = "var(--freshlime)"; // Text should contrast with black background
-            loadingImage.src = "./public/proxy_lime.webp"; // Set image to lime
+            counterEl.style.color = "var(--freshlime)";
+            loadingImage.src = "./public/proxy_lime.webp";
           } else {
-            counterEl.style.color = "var(--black)"; // Text contrast with lime background
+            counterEl.style.color = "var(--black)";
             loadingImage.src = "./public/proxy_black.webp"; // Set image to black
           }
 
@@ -928,14 +928,12 @@
           setTimeout(UpdateCounter, delay);
         }
 
-        // Ensure the correct initial text color is set before the first update
-        counterEl.style.color = "var(--freshlime)"; // Set initial text color to lime
+        counterEl.style.color = "var(--freshlime)"; 
 
         UpdateCounter();
       }
 
       document.addEventListener("DOMContentLoaded", () => {
-        // Set the target date to October 8, 2024, at 12 PM
         const targetDate = new Date("2024-10-04T12:00:00");
 
         function updateCountdown() {
@@ -943,7 +941,6 @@
           const timeLeft = targetDate - now;
 
           if (timeLeft <= 0) {
-            // If time has expired, display "00" for each unit
             document.getElementById("days").textContent = "00";
             document.getElementById("hours").textContent = "00";
             document.getElementById("minutes").textContent = "00";
@@ -959,7 +956,6 @@
             (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
           );
 
-          // Update the HTML elements with the remaining time
           document.getElementById("days").textContent = String(days).padStart(
             2,
             "0"

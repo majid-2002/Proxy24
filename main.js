@@ -16,14 +16,12 @@ function toggleAccordion(index) {
   const accordionBtn = document.getElementById(`accordion-btn-${index}`);
   const faqBg = content.querySelector(".faq_bg_transition");
 
-  // SVG for Minus icon
   const minusSVG = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
       <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
     </svg>
   `;
 
-  // SVG for Plus icon
   const plusSVG = `
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="w-4 h-4">
       <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
@@ -31,7 +29,6 @@ function toggleAccordion(index) {
   `;
 
   if (content.style.maxHeight && content.style.maxHeight !== "0px") {
-    // Close the accordion
     content.style.maxHeight = "0";
     icon.innerHTML = plusSVG;
     accordionBtn.classList.remove("rounded-b-none");
@@ -39,11 +36,10 @@ function toggleAccordion(index) {
     icon.style.color = "white";
     accordionBtn.style.color = "white";
 
-    // Ensure the background transition happens first
     setTimeout(() => {
       faqBg.classList.remove("active");
       accordionBtn.classList.remove("accordion-open");
-    }, 300); // Duration of the content and background transition
+    }, 300);
   } else {
     // Open the accordion
     content.style.maxHeight = content.scrollHeight + "px";
@@ -64,7 +60,6 @@ function toggleAccordion(index) {
 
 document.addEventListener("DOMContentLoaded", () => {
   const cursorDot = document.querySelector("[data-cursor-dot]");
-  // const cursorOutline = document.querySelector("[data-cursor-outline]"); // Remove this line
 
   if (!cursorDot) {
     console.error("Cursor dot element not found.");
@@ -96,7 +91,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     cursorDot.className = `cursor-dot ${inSection}`;
-    // cursorOutline.className = `cursor-outline ${inSection}`; // Remove this line
   }
 
   // Event listener for mouse move
@@ -106,10 +100,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     cursorDot.style.left = `${posX}px`;
     cursorDot.style.top = `${posY}px`;
-
-    // Remove the outline positioning
-    // cursorOutline.style.left = `${posX}px`;
-    // cursorOutline.style.top = `${posY}px`;
 
     updateCursorColor(posX, posY);
   });
@@ -134,7 +124,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const second_od = document.querySelector(".second_od");
   const third_od = document.querySelector(".third_od");
 
-  // Function to trigger all odometers
   const triggerOdometers = () => {
     createOdometer(hours_odometer, 36);
     createOdometer(prize_odometer, 60000);
@@ -151,26 +140,24 @@ document.addEventListener("DOMContentLoaded", () => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           triggerOdometers();
-          // Stop observing once the odometers are triggered
           observer.unobserve(highlightsSection);
         }
       });
     },
     {
-      threshold: 0.5, // Trigger when 50% of the section is visible
+      threshold: 0.5,
     }
   );
 
   observer.observe(highlightsSection);
 });
 
-let fadeTimeout; // Variable to store the timeout
+let fadeTimeout;
 
 function toggleLocation() {
   const location = document.getElementById("location_section");
 
   if (location.classList.contains("opacity-0")) {
-    // Show the location section with fade-in
     location.classList.remove("opacity-0");
     location.classList.add("opacity-100");
     location.style.visibility = "visible";
@@ -183,20 +170,17 @@ function toggleLocation() {
       location.classList.add("opacity-0");
       location.classList.remove("opacity-100");
 
-      // Wait for the opacity transition to finish before hiding completely
       setTimeout(() => {
         location.style.visibility = "hidden";
-      }, 500); // Match the duration of the CSS transition
-    }, 5000); // 5000 milliseconds = 5 seconds
+      }, 500); 
+    }, 5000); 
   } else {
-    // Hide immediately if already visible
-    clearTimeout(fadeTimeout); // Clear the timeout to avoid multiple triggers
+    clearTimeout(fadeTimeout);
     location.classList.add("opacity-0");
     location.classList.remove("opacity-100");
 
-    // Wait for the fade-out effect to complete before setting visibility to hidden
     setTimeout(() => {
       location.style.visibility = "hidden";
-    }, 500); // Match the duration of the CSS transition
+    }, 500);
   }
 }
