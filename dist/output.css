@@ -2014,7 +2014,6 @@ body::before {
 }
 
 .countdown_separator {
-  font-size: 48px;
   color: var(--mystic-orchid);
 }
 
