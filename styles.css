@@ -314,7 +314,7 @@ body::before {
 .slogan_icon_2 {
     background-image: url('./public/smiley.png');
     position: absolute;
-    top: 320vh;
+    top: 340vh;
     left: 80px;
     transform: translateY(50%);
     z-index: -1;
