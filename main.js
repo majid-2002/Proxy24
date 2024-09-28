@@ -128,7 +128,7 @@ document.addEventListener("DOMContentLoaded", () => {
     createOdometer(hours_odometer, 36);
     createOdometer(prize_odometer, 60000);
     createOdometer(events_odometer, 3);
-    createOdometer(first_od, 30000);
+    createOdometer(first_od, 4);
     createOdometer(second_od, 20000);
     createOdometer(third_od, 10000);
   };

@@ -697,6 +697,10 @@ video {
   margin-left: 0.5rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .ml-4 {
   margin-left: 1rem;
 }
@@ -719,10 +723,6 @@ video {
 
 .mt-9 {
   margin-top: 2.25rem;
-}
-
-.ml-3 {
-  margin-left: 0.75rem;
 }
 
 .block {
@@ -1434,6 +1434,10 @@ video {
 
 .pt-60 {
   padding-top: 15rem;
+}
+
+.pt-3 {
+  padding-top: 0.75rem;
 }
 
 .text-left {
@@ -2338,10 +2342,6 @@ footer {
 
   .md\:ml-0 {
     margin-left: 0px;
-  }
-
-  .md\:ml-4 {
-    margin-left: 1rem;
   }
 
   .md\:ml-3 {
