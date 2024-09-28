@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const triggerOdometers = () => {
     createOdometer(hours_odometer, 36);
-    createOdometer(prize_odometer, 60000);
+    createOdometer(prize_odometer, 150000);
     createOdometer(events_odometer, 3);
     createOdometer(first_od, 4);
     createOdometer(second_od, 20000);
